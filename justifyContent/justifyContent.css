@@ -1,0 +1,52 @@
+html {
+    --text-color: hsl(196, 62%, 17%, 1);
+    --main-bg: hsl(300, 6%, 66%, .97);
+    --menu-bg: hsl(114, 100%, 99%, 1);
+    --button-bg: hsl(206, 54%, 92%, 1);
+    --btn-primary: hsl(211, 84%, 41%, 1);
+    --text-primary: hsl(360, 100%, 100%, 1);
+
+    box-sizing: border-box;
+}
+
+*, 
+::before,
+::after {
+    box-sizing: inherit;
+}
+ body{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color: var(--main-bg);
+    padding: 6.25em;
+}
+
+.main_menu {
+    background-color: var(--menu-bg);
+    border-radius: 50em;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 1em;
+}
+
+.menu_list > li > a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-bg);
+    border-radius: 50em;
+    padding: .5em 1em;
+}
+
+.menu_list .btn-primary {
+    color: var(--text-primary);
+    background-color: var(--btn-primary);
+}
