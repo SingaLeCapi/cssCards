@@ -1,0 +1,63 @@
+html {
+    --text-color: #454849;
+    --small-text-color: hsl(355, 0%, 41%, 1);
+    --main-bg: #d0cfd4;
+    --inner-bg: #f5fcfd;
+    --card-bg: #91b9e0;
+
+    box-sizing: border-box;
+}
+
+*, 
+::before,
+::after {
+    box-sizing: inherit;
+}
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+.container {
+    background-color: var(--main-bg);
+    padding: 6.25rem 2.5rem;
+    margin: 0 auto;
+}
+
+.container__inner {
+    display: flex;
+    padding: 1.875em;
+    background-color: var(--inner-bg);
+    border-radius: .625em;
+    box-shadow: 2px 2px 5px #d8d6d7;
+}
+
+.container__inner > .inner__card {
+    flex: 1;
+}
+
+.container__inner > .inner__card + .inner__card {
+    margin-left: 1em;
+}
+
+.inner__card {
+    background-color: var(--card-bg);
+    padding: 1.5625em;
+    border-radius: .625em;
+}
+
+.inner__card > p {
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    margin-block-start: 0; /*Overrides the user agent default properties*/
+    margin-block-end: 1em;
+
+}
+
+.inner__card > h4 {
+    font-size: .975em;
+    color: var(--small-text-color);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
