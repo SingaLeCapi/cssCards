@@ -1,0 +1,49 @@
+:root {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.profile_card {
+    display: flex;
+    margin: 8em auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: hsl(5, 0% 70%, 1);
+    border-radius: .5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+    max-width: 850px;
+    width: 80%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile > img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.profile_name {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: hsla(215, 28%, 17%, 1);
+    margin: 0;
+}
+
+.profile_position {
+    font-size: .652em;
+    color: rgba(75, 85, 99, 1);
+    letter-spacing: .5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
