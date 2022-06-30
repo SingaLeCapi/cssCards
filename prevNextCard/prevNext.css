@@ -34,10 +34,11 @@ html {
 
 .card__title {
     color: var(--title-primary);
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 1em;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .card__text {
@@ -61,4 +62,22 @@ html {
     font-weight: bolder;
     margin-top: 1.5em;
     background-color: var(--button-bg)
+}
+
+.con {
+    position: relative;
+    height: 30px;
+}
+
+.box {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(130, 50%, 50%);
+    transition: all 1s linear;
+}
+
+.con:hover .box {
+    left: 400px;
 }

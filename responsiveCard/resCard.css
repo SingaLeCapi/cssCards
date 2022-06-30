@@ -1,0 +1,100 @@
+:root{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #005e91;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.profile__image {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.social_list {
+    display: flex;
+    /*We could have used margin on the li element if we wanted
+     this isanother way of spacing list items*/
+    justify-content: space-around;
+    list-style: none;
+    /*By default the user agent add a padding left on ul
+    the properties below cancel any extra unit added to the ul tag by dfault*/
+    margin: 0;
+    padding: 0;
+    /*Setting a width to the social link in order to center the items within that width*/
+    width: 125px;
+    margin: 0 auto;
+}
+
+.social_link {
+    color: #5bcbf0;
+    opacity: .5;
+    font-size: 1.125rem;
+}
+
+.social_link:hover, 
+.social_link:focus {
+    opacity: 1;
+}
+
+.profile_name {
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+/*Adding an underline to the profile name*/
+.profile_name:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 2.5rem;
+    background-color: #5bcbf0;
+    margin: .7em auto .5em;
+    opacity: .5;
+}
+
+.profile_position {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .875em;
+    color: #5bcbf0;
+    margin-bottom: 2em;
+}
+
+.profile_body {
+    font-weight: 300;
+    opacity: .9;
+    margin-bottom: 0;
+}
+
+@media (min-width: 37em){
+    .card {
+        flex-direction: row;
+    }
+
+    .profile_main {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    .profile_name::after {
+        margin-left: 0;
+    }
+}
